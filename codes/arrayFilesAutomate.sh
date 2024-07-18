@@ -8,7 +8,7 @@
 #Maximum runtime is limited to 10 days, ie. 240 hours
 #SBATCH --time=240:00:00
 
-#SBATCH --mail-user=madamega@ist.ac.at
+#SBATCH --mail-user=
 #SBATCH --mail-type=ALL
 
 Number=$(ls $PWD/chr-*.log -1 | wc -l)
