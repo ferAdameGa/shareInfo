@@ -1,12 +1,4 @@
 #!/bin/bash
-#
-#----------------------------------------------------------------
-# running a multiple independent jobs
-#----------------------------------------------------------------
-#
-#  Defining options for slurm how to run
-#----------------------------------------------------------------
-#
 #SBATCH --job-name=array
 #SBATCH --output=chr-%a.log
 #        %A and %a are placeholders for the jobid and taskid, resp.
@@ -18,7 +10,7 @@
 #Maximum runtime is limited to 10 days, ie. 240 hours
 #SBATCH --time=240:00:00
 
-#SBATCH --mail-user=madamega@ist.ac.at
+#SBATCH --mail-user=
 #SBATCH --mail-type=ALL
 #SBATCH --array=1-22
 #18
@@ -35,7 +27,6 @@
 #
 #Do not export the local environment to the compute nodes
 #SBATCH --export=NONE
-##SBATCH --reservation=vicosgrp_75
 
 unset SLURM_EXPORT_ENV
 CHR=${SLURM_ARRAY_TASK_ID}
