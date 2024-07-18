@@ -21,6 +21,6 @@ fi
 # second line, etc.)
 VAR=$( sed -n ${SLURM_ARRAY_TASK_ID}p $file )
 
-# Could also use readarray -O 1 -t VARS $ids_file, etc
+# Could also use readarray -O 1 -t VARS $file, etc
 
 echo $VAR
