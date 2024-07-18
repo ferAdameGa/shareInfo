@@ -105,9 +105,35 @@ file=$(ls ${dir}chr-*.log | sed -n ${SLURM_ARRAY_TASK_ID}p)
 echo "File: "${file}
 ```
 
+### Automate run all files
+
+Example run over output logs from previous example [code](codes/arrayFilesAutomate.sh)
+
+```
+Number=$(ls $PWD/chr-*.log -1 | wc -l)
+echo 'Total number of runs: '$Number
+
+
+if [[ "$SLURM_ARRAY_TASK_ID" == "" ]]; then
+     # Relaunch this script as an array
+     exec sbatch --array=1-${Number} $0
+fi
+
+unset SLURM_EXPORT_ENV
+
+dir=$PWD/
+
+file=$(ls ${dir}chr-*.log | sed -n ${SLURM_ARRAY_TASK_ID}p)
+echo "File: "${file}
+```
+NOTE: runs are not performed in order, aka output files will have different numbers/names than that of the input files
+
+![image](https://github.com/user-attachments/assets/bba5321f-7526-4fce-a761-e6604b0ad0d3)
+
+
 ## Run over list on txt file
 
-Example [code](codes/arrayFromFile.sh) print each line of [file](codes/file.txt]
+Example [code](codes/arrayFromFile.sh) print each line of [file](codes/file.txt)
 ```
 file=file.txt
 
