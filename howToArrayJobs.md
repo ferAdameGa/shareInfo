@@ -1,11 +1,11 @@
 # Why?
-```
+
 Please do not submit many jobs using a for loop through a Bash script, python etc. This procedure will provoke, indeed, continuous calls to the slurm daemon causing network and socket errors. We strongly suggest to submit instead a single array job
 
-...
+
 
 In case your analysis involves a job, maybe with little resource requirements, which has to be repeated multiple times, maybe with different input data, or different parameters, an array job will be useful. This allows to submit with little effort collections of similar jobs quickly and easily. The job will be executed independently but in parallel, as far as the available resources allow for it. Job arrays with millions of tasks can be submitted in milliseconds. All jobs must have the same initial options (e.g. size, time limit, etc.)
-```
+
 
 # Header
 
