@@ -10,7 +10,7 @@
 #Maximum runtime is limited to 10 days, ie. 240 hours
 #SBATCH --time=240:00:00
 
-#SBATCH --mail-user=NAME@ist.ac.at
+#SBATCH --mail-user=NAME
 #SBATCH --mail-type=ALL
 #SBATCH --array=5-10
 #IMPORTANT NUMBER OF FILES TO BE PROCESSED
@@ -26,7 +26,6 @@
 #
 #Do not export the local environment to the compute nodes
 #SBATCH --export=NONE
-##SBATCH --reservation=vicosgrp_75
 
 unset SLURM_EXPORT_ENV
 NUMBER=${SLURM_ARRAY_TASK_ID}
