@@ -64,7 +64,7 @@ Important stuff here on how many times to run!
 
 Inclusive range
 
-Example [code](codes/runArrayJob.sh) run [python code](codes/array.py) from chromosome 1 to 22:
+Example [code](codes/runPythonArray.sh) run [python code](codes/array.py) from chromosome 1 to 22:
 
 ```
 #SBATCH --job-name=X_matrix
