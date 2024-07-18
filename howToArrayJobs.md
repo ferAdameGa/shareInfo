@@ -67,18 +67,14 @@ Inclusive range
 Example [code](codes/runPythonArray.sh) run [python code](codes/array.py) from chromosome 1 to 22:
 
 ```
-#SBATCH --job-name=X_matrix
-#SBATCH --output=logs/x_matrix-%a.log
+#SBATCH --job-name=array
+#SBATCH --output=logs/array-%a.log
 
 ...
 
 #SBATCH --array=1-22
 
 ...
-
-source /mnt/nfs/clustersw/Debian/bullseye/anaconda3/2023.04/activate_anaconda3_2023.04.txt
-conda activate env2
-
 unset SLURM_EXPORT_ENV
 CHR=${SLURM_ARRAY_TASK_ID}
 echo 'Working on chromosome: '${CHR}
