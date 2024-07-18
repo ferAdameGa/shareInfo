@@ -62,8 +62,30 @@ Important stuff here on how many times to run!
 
 ## Run a set of numbers
 
+Inclusive range
+
+Example [code](codes/) run [python code](codes/) from chromosome 1 to 22:
 
 
+```
+#SBATCH --job-name=X_matrix
+#SBATCH --output=logs/x_matrix-%a.log
+
+...
+
+#SBATCH --array=1-22
+
+...
+
+source /mnt/nfs/clustersw/Debian/bullseye/anaconda3/2023.04/activate_anaconda3_2023.04.txt
+conda activate env2
+
+unset SLURM_EXPORT_ENV
+CHR=${SLURM_ARRAY_TASK_ID}
+echo 'Working on chromosome: '${CHR}
+
+python array.py ${CHR}
+```
 
 ## Run over files
 
@@ -72,3 +94,9 @@ Important stuff here on how many times to run!
 > ls DIRECTORY -1 | wc -l
 
 Make sure #SBATCH --array=1-# matches the number of files!
+
+Example:
+
+
+## Run over list on  txt file
+
