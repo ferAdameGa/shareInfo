@@ -107,6 +107,7 @@ echo "File: "${file}
 
 ## Run over list on txt file
 
+Example [code](codes/arrayFromFile.sh) print each line of [file](codes/file.txt]
 ```
 file=file.txt
 
