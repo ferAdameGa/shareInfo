@@ -128,7 +128,7 @@ echo "File: "${file}
 ```
 NOTE: runs are not performed in order, aka output files will have different numbers/names than that of the input files
 
-![image](https://github.com/user-attachments/assets/bba5321f-7526-4fce-a761-e6604b0ad0d3)
+![image](https://github.com/user-attachments/assets/35f7fcfa-82cb-4b77-8904-daf83735563d)
 
 
 ## Run over list on txt file
