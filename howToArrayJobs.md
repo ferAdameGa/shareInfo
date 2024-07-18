@@ -16,7 +16,7 @@ In case your analysis involves a job, maybe with little resource requirements, w
 ```
 Result: Just one file ARRAY.log (overwritten)
 
-Example output based on modified [code](codes/arrayJob.sh):
+Example log output based on modified [code](codes/arrayJob.sh):
 
 ![image](https://github.com/user-attachments/assets/991a51b6-062e-4dc7-a72e-dbd1c2104917)
 
@@ -30,7 +30,7 @@ Notice not all numbers are printed in the log file but all of them ran.
 ```
 Result: One ARRAY_[Job]-[Run].log file per run
 
-Example:
+Logs:
 
 ![image](https://github.com/user-attachments/assets/2342903c-e3b2-48a5-8537-39b0d1e83868)
 
@@ -41,7 +41,7 @@ Example:
 ```
 Result: One ARRAY-[Run].log file per run
 
-Example:
+Logs:
 
 ![image](https://github.com/user-attachments/assets/21e8d789-d4ed-489f-9ffd-ef71c460432c)
 
