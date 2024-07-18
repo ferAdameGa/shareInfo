@@ -1,12 +1,4 @@
 #!/bin/bash
-#
-#----------------------------------------------------------------
-# running a multiple independent jobs
-#----------------------------------------------------------------
-#
-#  Defining options for slurm how to run
-#----------------------------------------------------------------
-#
 #SBATCH --job-name=array
 #SBATCH --output=array%A-%a.log
 #        %A and %a are placeholders for the jobid and taskid, resp.
@@ -18,10 +10,9 @@
 #Maximum runtime is limited to 10 days, ie. 240 hours
 #SBATCH --time=240:00:00
 
-#SBATCH --mail-user=madamega@ist.ac.at
+#SBATCH --mail-user=NAME@ist.ac.at
 #SBATCH --mail-type=ALL
 #SBATCH --array=5-10
-#18
 #IMPORTANT NUMBER OF FILES TO BE PROCESSED
 #number of files in a directory: ls -1 | wc -l
 #for this job: ls DIRECTORY -1 | wc -l = 11
@@ -40,9 +31,6 @@
 unset SLURM_EXPORT_ENV
 NUMBER=${SLURM_ARRAY_TASK_ID}
 
-echo 'Working on job no.: ' ${NUMBER}
+echo 'Working on job no: ' ${NUMBER}
 
-#dir=/nfs/scistore17/robingrp/madamega/rotation4/run_GEMMA/AssoTest_LinearModel/output/
-#file=$(ls ${dir}*.assoc.txt | sed -n ${SLURM_ARRAY_TASK_ID}p)
-
-
+#run whatever
