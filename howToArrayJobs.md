@@ -91,6 +91,7 @@ python array.py ${CHR}
 ```
 
 Outputs:
+
 ![image](https://github.com/user-attachments/assets/e6439370-87ab-4b56-9ae0-69873d35329d)
 
 
@@ -161,4 +162,5 @@ VAR=$( sed -n ${SLURM_ARRAY_TASK_ID}p $file )
 echo $VAR
 ```
 Outputs:
+
 ![image](https://github.com/user-attachments/assets/6968dab0-f67f-49a1-99df-5feac3df4541)
