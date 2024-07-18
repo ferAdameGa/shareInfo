@@ -36,14 +36,6 @@ Important stuff here on how many times to run!
 #SBATCH --export=NONE
 #SBATCH --reservation=RESERVATION_NO
 ```
-
-```
-#SBATCH --array=1-4
-#18
-#IMPORTANT NUMBER OF FILES TO BE PROCESSED
-#number of files in a directory: ls -1 | wc -l
-#for this job: ls /nfs/scistore18/vicosgrp/madamega/artemiaImprinting/analysis/F1C1KS/*1.fastq -1 | wc -l = 11
-```
 # Run
 
 ## Run a set of numbers
@@ -56,3 +48,5 @@ Important stuff here on how many times to run!
 ### How many files are in folder:
 
 > ls DIRECTORY -1 | wc -l
+
+Make sure #SBATCH --array=1-# matches the number of files!
