@@ -64,8 +64,7 @@ Important stuff here on how many times to run!
 
 Inclusive range
 
-Example [code](codes/) run [python code](codes/) from chromosome 1 to 22:
-
+Example [code](codes/runArrayJob.sh) run [python code](codes/array.py) from chromosome 1 to 22:
 
 ```
 #SBATCH --job-name=X_matrix
@@ -95,8 +94,16 @@ python array.py ${CHR}
 
 Make sure #SBATCH --array=1-# matches the number of files!
 
-Example:
+Example run over output logs from previous example [code](codes/arrayFiles.sh)
 
+```
+unset SLURM_EXPORT_ENV
 
-## Run over list on  txt file
+dir=$PWD/
+
+file=$(ls ${dir}chr-*.log | sed -n ${SLURM_ARRAY_TASK_ID}p)
+echo "File: "${file}
+```
+
+## Run over list on txt file
 
