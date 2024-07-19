@@ -1,5 +1,7 @@
 # Why?
 
+
+
 ## Load anaconda to the cluster
 
 > module load anaconda3/2023.04
@@ -31,7 +33,12 @@ Defined spaces of work with their own packages and pre-sets
 
 > conda deactivate
 
-Note: Once activated your terminal would serve as inside said environment so if you want to run anything else it's recommende to exit the environment before running
+Note: Once activated your terminal would serve as inside said environment so if you want to run anything else it's recommende to exit the environment before running.
+
+Example: Conda activated in environment base (default)
+
+![image](https://github.com/user-attachments/assets/e7354215-5007-4cc4-af30-c0c69a433b07)
+
 
 ## Install Packages
 
@@ -48,6 +55,8 @@ Note: Generally packages have instructions on their doc pages on how to install 
 IDE for python, I recommend cause I like it :3 
 
 It lets you see the variables and plot the figures in a different window
+![image](https://github.com/user-attachments/assets/d30ead65-a814-4694-9c7a-dd56ae719b48)
+
 
 ### Install in conda
 
