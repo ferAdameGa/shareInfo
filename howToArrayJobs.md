@@ -176,3 +176,5 @@ NO=("0.5" "1" "1.5")
 echo 'Working on job : '${NUM}
 echo 'List: '${NO[${NUM}-1]}
 ```
+Outputs:
+![image](https://github.com/user-attachments/assets/9bba4307-9c65-4b07-9a50-0baf2985b020)
