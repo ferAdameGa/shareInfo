@@ -170,6 +170,9 @@ Outputs:
 Example [code](codes/arrayList.sh)
 
 ```
+NUM=${SLURM_ARRAY_TASK_ID}
+NO=("0.5" "1" "1.5")
 
-
+echo 'Working on job : '${NUM}
+echo 'List: '${NO[${NUM}-1]}
 ```
