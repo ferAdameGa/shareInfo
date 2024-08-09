@@ -164,3 +164,12 @@ echo $VAR
 Outputs:
 
 ![image](https://github.com/user-attachments/assets/6968dab0-f67f-49a1-99df-5feac3df4541)
+
+## Run over list on SH file
+
+Example [code](codes/arrayList.sh)
+
+```
+
+
+```
