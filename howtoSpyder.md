@@ -20,3 +20,10 @@
 [install spyder website](https://docs.spyder-ide.org/current/installation.html)
 [cluster info environments](https://it.pages.ist.ac.at/docs/hpc-cluster/hpc-handbook/installing-software/)
 
+
+## Use once it's installed
+```
+module load python/3.12.5
+source spyder-env/bin/activate
+spyder
+```
