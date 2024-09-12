@@ -1,9 +1,6 @@
-#NEVERMIND 
+# NEVERMIND 
 
-
-# Why?
 ![image](https://github.com/user-attachments/assets/3d028a56-2bef-47b0-ac33-7e48d83a78c8)
-
 
 
 ## Load anaconda to the cluster
